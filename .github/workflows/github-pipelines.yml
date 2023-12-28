@@ -1,8 +1,7 @@
 name: 001-ms-template
 
 on:
-  wflow_call:
-  #workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   call-pipeline-workflow-A:
