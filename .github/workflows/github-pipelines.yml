@@ -1,12 +1,25 @@
-trigger:
-  - main
+name: 001-ms-template
 
-pr:
-  - main
-resources:
-  repositories:
-  - repository: Pipelines
-    type: git
-    name: pipelines
-extends:
-  template: ms/template.yml@pipelines
+on:
+  push:
+    branches: none # [ main ]
+  pull_request:
+    branches: none # [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  call-pipeline-workflow-A:
+    uses: josue-r/Pipelines/.github/workflows/github-pipelines.yml@main
+    with:
+      username: Josue
+    secrets:
+      token: ${{ secrets.TOKEN }}
+
+  call-pipeline-workflow-B:
+    uses: josue-r/Pipelines/.github/workflows/github-pipelines.yml@main
+    with:
+      username: Vero
+    secrets:
+      token: ${{ secrets.TOKEN }}
