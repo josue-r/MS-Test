@@ -1,10 +1,6 @@
 name: 001-ms-template
 
 on:
-  pull_request:
-    branches:
-      - none
-
   workflow_dispatch:
 
 jobs:
