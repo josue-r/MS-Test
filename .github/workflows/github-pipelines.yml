@@ -1,4 +1,4 @@
-name: 001-ms-template
+name: 001-ms-template-caller
 
 on:
   push:
@@ -23,3 +23,4 @@ jobs:
       username: Vero
     secrets:
       token: ${{ secrets.TOKEN }}
+
