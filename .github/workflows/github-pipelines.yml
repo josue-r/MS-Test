@@ -9,14 +9,14 @@ on:
 
 jobs:
   call-pipeline-workflow-A:
-    uses: github.com/josue-r/Pipelines/main/.github/workflows/github-pipelines.yml@main
+    uses: josue-r/Pipelines/main/.github/workflows/github-pipelines.yml@main
     with:
       username: Josue
     secrets:
       token: ${{ secrets.TOKEN }}
 
   call-pipeline-workflow-B:
-    uses: github.com/josue-r/Pipelines/main/.github/workflows/github-pipelines.yml@main
+    uses: josue-r/Pipelines/main/.github/workflows/github-pipelines.yml@main
     with:
       username: Vero
     secrets:
