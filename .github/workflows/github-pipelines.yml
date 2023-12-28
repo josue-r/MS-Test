@@ -1,5 +1,8 @@
 trigger:
-- main
+  - main
+
+pr:
+  - main
 resources:
   repositories:
   - repository: Pipelines
