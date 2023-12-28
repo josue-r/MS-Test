@@ -18,6 +18,6 @@ jobs:
   call-pipeline-workflow-B:
     uses: github.com/josue-r/Pipelines/tree/main/.github/workflows/github-pipelines.yml@main
     with:
-      username: Josue
+      username: Vero
     secrets:
       token: ${{ secrets.TOKEN }}
