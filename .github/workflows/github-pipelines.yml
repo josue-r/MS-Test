@@ -22,7 +22,7 @@ jobs:
     uses: josue-r/Pipelines/.github/workflows/github-pipelines.yml@main
     with:
       username: Vero
-      lastname: Ruiz
+      lastname: Zamora
     secrets:
       token: ${{ secrets.TOKEN }}
 
